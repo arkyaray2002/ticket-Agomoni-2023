@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Scanner</title>
+    <title>QR Code Scanner - AGOMONI-2023</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -128,7 +128,7 @@
             try {
                 let data = JSON.parse(result);
                 // let url = `http://localhost:3000/verify-user?uid=${data.uid}&email=${data.email}`;
-                let url = `http://localhost:4000/verify-user?uid=${data.uid}&email=${data.email}`; //env might not work here, instead copy-paste the actual url
+                let url = `http://https://agomoni-2023.onrender.com//verify-user?uid=${data.uid}&email=${data.email}`; //env might not work here, instead copy-paste the actual url
                 fetch(url)
                     .then(resp => resp.json())
                     .then((response) => {
