@@ -128,7 +128,7 @@
             try {
                 let data = JSON.parse(result);
                 // let url = `http://localhost:3000/verify-user?uid=${data.uid}&email=${data.email}`;
-                let url = `https://agomoni-2023.onrender.com/verify-user?uid=${data.uid}&email=${data.email}`; //env might not work here, instead copy-paste the actual url
+                let url = `agomoni-2023.onrender.com/verify-user?uid=${data.uid}&email=${data.email}`; //env might not work here, instead copy-paste the actual url
                 fetch(url)
                     .then(resp => resp.json())
                     .then((response) => {
