@@ -128,7 +128,7 @@
             try {
                 let data = JSON.parse(result);
                 // let url = `http://localhost:3000/verify-user?uid=${data.uid}&email=${data.email}`;
-                let domain='https://ticket-agomoni.onrender.com'
+                let domain='https://agomoni-2023-ticket.onrender.com'
                 let url = `${domain}/verify-user?uid=${data.uid}&email=${data.email}`;  //env might not work here, instead copy-paste the actual url
                 fetch(url)
                     .then(resp => resp.json())
