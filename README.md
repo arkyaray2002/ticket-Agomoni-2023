@@ -1,1 +1,0 @@
-# ticket-Agomoni-2023
